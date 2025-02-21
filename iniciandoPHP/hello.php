@@ -10,13 +10,17 @@
 
     <p>
         <?php
-            echo "<p>Hello Wolrd!</p>";
+            echo "<p>Hello World!</p>";
 
             $nome = "Leonardo";
             $data = date("d/m/Y");
             $hora = date("h:i");
 
-            echo "<p>Olá, meu nome é $nome. Hoje é dia $data e agora são $hora";
+            echo "<p>Olá, meu nome é $nome. Hoje é dia $data e agora são $hora</p>";
+
+            echo "<hr>";
+
+            echo "<a href='Leonardo/'>Leonardo</a>";
         ?>
     </p>
 </body>

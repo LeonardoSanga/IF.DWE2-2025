@@ -6,13 +6,12 @@
     <title>Leonardo Minguini Sanga</title>
 </head>
 <body>
+    <?php
+        echo "<h1>Leonardo Minguini Sanga</h1>";
 
-    <p>
-        <?php
-            echo "<h1>Leonardo Minguini Sanga</h1>";
+        echo "<hr>";
 
-        
-        ?>
-    </p>
+        echo "<p><a href='../hello.php'>Hello World!</a></p>";
+    ?>
 </body>
 </html>
