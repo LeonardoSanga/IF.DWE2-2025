@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca</title>
+
+    <link rel="stylesheet" href="style/header.css">
+
+    <style>
+        .busca-container {
+            background-image: url(Imagens/planodefundo_telabusca.jpg);
+            padding: 3em 0;
+            font-size: 2em;
+        }
+
+        .busca-container h1 {
+            margin-top: 0;
+            text-align: center;
+            color: rgb(173, 173, 15);
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: .2em;
+        }
+
+        .row input {
+            font-size: 1em;
+        }
+
+        .main-container {
+            font-size: 2em;
+            padding-left: 3em;
+            margin-top: 3em;
+        }
+
+        .main-container ul {
+            list-style: square;
+        }
+
+        .main-container ul li {
+            margin-bottom: 20px;
+        }
+
+        .destaque {
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navegacao">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="paginaAtual">
+                        <a href="busca.html">Busca</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Formulário/Tabela</a>
+                    </li>
+                    <li>
+                        <a href="postagem.html">Postagem c/ imagem</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav>
+        <div class="busca-container">
+            <h1>Busca de Conteúdo</h1>
+
+            <div class="row">
+                <input type="text" placeholder="Digite para buscar">
+                <input type="submit">
+            </div>
+            
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <ul>
+                <li>
+                    <a href="">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="https://vtp.ifsp.edu.br/" target="_blank">Site do <span class="destaque">IFSP campus Votuporanga</span>.</a>
+                </li>
+                <li>
+                    <a href="https://vtp.ifsp.edu.br/images/ConCam/Processo_234410009962022-83_-_Reformulao_PPC_BSI.pdf" target="_blank">PPC atualizado do curso de BSI</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

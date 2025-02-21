@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .containerPrincipal {
+            padding: 2em 3em;
+        }
+
+        .row {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="containerPrincipal">
+        <h1>Formulário de Cadastro</h1>
+        <hr>
+        <div class="row">
+            <div class="col-8">
+
+                <form action="">
+
+                    <div class="mb-3">
+                        <label class="form-label" for="nome">Nome completo:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="basic-addon1" id="nome" name="nome" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="col-4">
+                            <label class="form-label" for="telefone">Telefone:</label>
+                            <input type="text" class="form-control" aria-describedby="basic-addon1" id="telefone" name="telefone" placeholder="(DD)XXXXX-XXXX" required
+                            pattern="^\(\d{2}\)\d{5}-\d{4}$" title="Digite o telefone no formato: (DD)XXXXX-XXXX">
+                        </div>
+
+                        <div class="col-8">
+                            <label class="form-label" for="email">E-mail:</label>
+                            <input type="email" class="form-control" aria-describedby="basic-addon1" id="email" name="email" placeholder="Digite seu email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="col-4">
+                            <label class="form-label" for="cpf">CPF:</label>
+                            <input type="text" class="form-control" aria-describedby="basic-addon1" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required
+                            pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" title="Digite o CPF no formato XXX.XXX.XXX-XX">
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-label" for="dataNasc">Data de Nascimento:</label>
+                            <input type="date" class="form-control" aria-describedby="basic-addon1" id="dataNasc" name="dataNasc" required>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-label" for="cep">CEP:</label>
+                            <input type="text" class="form-control" aria-describedby="basic-addon1" id="cep" name="cep" placeholder="XX.XXX-XXX" required
+                            pattern="^\d{2}\.\d{3}-\d{3}$" title="Digite o CEP no formato XX.XXX-XXX">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="col-8">
+                            <label class="form-label" for="endereco">Endereço:</label>
+                            <input type="text" class="form-control" aria-describedby="basic-addon1" id="endereco" name="endereco" placeholder="Rua, n° e bairro" required>
+                        </div>
+
+                        <div class="col-4">
+                            <label class="form-label" for="cidade">Cidade:</label>
+                            <select name="cidade" id="cidade" class="form-control" aria-describedby="basic-addon1" required>
+                                <option value="nulo">[selecione]</option>
+                                <option value="saopaulo">São Paulo</option>
+                                <option value="votuporanga">Votuporanga</option>
+                                <option value="Jales">Jales</option>
+                                <option value="saofrancisco">São Francisco</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-6">
+                            <label class="form-label" for="foto">Foto de perfil:</label>
+                            <input type="file" class="form-control" aria-describedby="basic-addon1" id="foto" name="foto" required accept="image/*">
+                        </div>
+
+                        <div class="col-6">
+                            <label class="form-label" for="contrato">Contrato assinado (em PDF):</label>
+                            <input type="file" class="form-control" aria-describedby="basic-addon1" id="contrato" name="contrato" required accept=".pdf">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            <button type="reset" class="btn btn-warning">Limpar</button>
+                        </div>
+                    </div>
+                 
+                </form>
+
+            </div>
+            <div class="col-4">
+                <img src="Imagens/formulario_icone.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
