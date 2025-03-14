@@ -25,10 +25,10 @@
 
     <div class="container">
         <ul class="list-group">
-            <li class="list-group-item">1. <a href="tabuada.php">Praticando tabuada</a></li>
-            <li class="list-group-item">2. <a href="contador.php">Praticando contador</a></li>
-            <li class="list-group-item">3. <a href="numerosPrimos.php">Praticando números primos</a></li>
-            <li class="list-group-item">4. <a href="geradorTabela.php">Praticando gerador de tabela</a></li>
+            <li class="list-group-item">1. <a href="tabuada.php" target="_blank">Praticando tabuada</a></li>
+            <li class="list-group-item">2. <a href="contador.php" target="_blank">Praticando contador</a></li>
+            <li class="list-group-item">3. <a href="numerosPrimos.php" target="_blank">Praticando números primos</a></li>
+            <li class="list-group-item">4. <a href="geradorTabela.php" target="_blank">Praticando gerador de tabela</a></li>
         </ul>
     </div>
 
