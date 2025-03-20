@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inclusão de arquivos</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
@@ -38,10 +38,24 @@
                 <span class="fs-4">Simple header</span>
             </a>
 
+            <?php 
+            $pagina_atual = $_SERVER['REQUEST_URI']; 
+
+            function isActive($pagina) {
+                global $pagina_atual;
+
+                if ($pagina == "index.php" && ($pagina_atual == "/" || $pagina_atual == "/index.php")) {
+                    return 'active';
+                }
+
+                return strpos($pagina_atual, $pagina) !== false ? 'active' : '';
+            }
+            ?>
+
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Início</a></li>
-                <li class="nav-item"><a href="sobre.php" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="FAQs.php" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="contato.php" class="nav-link">Contato</a></li>
+                <li class='nav-item'><a href='index.php' class='nav-link <?php echo isActive("index.php") ?>' aria-current='page'>Início</a></li>
+                <li class='nav-item'><a href='sobre.php' class='nav-link <?php echo isActive('sobre.php') ?>'>Sobre</a></li>
+                <li class='nav-item'><a href='FAQs.php' class='nav-link <?php echo isActive('FAQs.php') ?>'>FAQs</a></li>
+                <li class='nav-item'><a href='contato.php' class='nav-link <?php echo isActive('contato.php') ?>'>Contato</a></li>
             </ul>
         </header>
